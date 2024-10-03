@@ -1,0 +1,8 @@
+name: Failed Test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run failed test
+        run: echo "This test always fails" && exit 1

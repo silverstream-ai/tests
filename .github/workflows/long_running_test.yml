@@ -1,0 +1,11 @@
+name: Long-Running Test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run long-running test
+        run: |
+          echo "This test runs for a long time"
+          sleep 300 # Sleep for 5 minutes
+          exit 0
